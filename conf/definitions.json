@@ -1,0 +1,32 @@
+{
+  "queues": [
+    {
+      "name": "telegram_update",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }
+  ],
+  "bindings": [
+    {
+      "source": "telegram_update",
+      "vhost": "/",
+      "destination": "telegram_update",
+      "destination_type": "queue",
+      "routing_key": "telegram_update",
+      "arguments": {}
+    }
+  ],
+  "exchanges": [
+    {
+      "name": "telegram_update",
+      "vhost": "/",
+      "type": "direct",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    }
+  ]
+}
