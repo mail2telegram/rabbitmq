@@ -1,6 +1,9 @@
 # directories
 /tmp/
 
+# files
+/docker-compose.override.yml
+
 # keep
 !.gitkeep
 
